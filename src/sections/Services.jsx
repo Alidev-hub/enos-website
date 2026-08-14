@@ -46,14 +46,14 @@ function Services() {
   }, [])
 
   return (
-    <section id="services" ref={sectionRef} className="relative scroll-mt-20 bg-transparent px-5 pb-16 pt-10 sm:px-8 sm:pt-12 lg:px-14 lg:pb-20 lg:pt-14" aria-labelledby="services-title">
-      <div className="mx-auto max-w-6xl rounded-[2.4rem] border border-white/80 bg-white/20 px-5 py-12 shadow-[0_30px_80px_rgba(35,102,171,.06)] backdrop-blur-[2px] sm:px-8 lg:px-10 lg:py-16">
-        <header ref={headingRef} className="mx-auto max-w-3xl text-center">
+    <section id="services" ref={sectionRef} className="relative scroll-mt-20 bg-transparent px-5 py-20 sm:px-8 sm:py-24 lg:px-14 lg:pb-20 lg:pt-14" aria-labelledby="services-title">
+      <div className="mx-auto max-w-6xl lg:rounded-[2.4rem] lg:border lg:border-white/80 lg:bg-white/20 lg:px-10 lg:py-16 lg:shadow-[0_30px_80px_rgba(35,102,171,.06)] lg:backdrop-blur-[2px]">
+        <header ref={headingRef} className="max-w-3xl text-start lg:mx-auto lg:text-center">
           <p className="mx-auto inline-flex rounded-full bg-blue-100/70 px-4 py-2 text-[9px] font-bold uppercase tracking-[0.2em] text-[#167bd7]">Nos expertises</p>
           <h2 id="services-title" className="mt-4 text-[1.75rem] font-extrabold leading-[1.08] tracking-[-0.045em] text-[#073b78] min-[375px]:text-3xl sm:text-4xl lg:text-5xl">Une gamme complète de services<br className="hidden sm:block" /> pour <span className="text-[#087ef1]">booster votre activité</span></h2>
         </header>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:mt-12 lg:grid-cols-3 lg:gap-5">
           {services.map((service) => (
             <article key={service.key} data-service-card className="group min-w-0 rounded-2xl border border-white/90 bg-white/80 p-5 shadow-[0_14px_40px_rgba(25,88,155,.08)] backdrop-blur-lg transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(25,88,155,.13)] sm:p-6">
               <div className="flex flex-col items-start gap-4 min-[375px]:flex-row min-[375px]:gap-5">

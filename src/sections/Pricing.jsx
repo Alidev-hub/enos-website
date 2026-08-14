@@ -48,7 +48,7 @@ function Pricing() {
   }, [])
 
   return (
-    <section id="tarifs" ref={sectionRef} className="relative isolate scroll-mt-20 overflow-hidden bg-transparent px-5 py-14 sm:px-8 lg:px-14 lg:py-20" aria-labelledby="pricing-title">
+    <section id="tarifs" ref={sectionRef} className="relative isolate scroll-mt-20 overflow-hidden bg-transparent px-5 py-20 sm:px-8 sm:py-24 lg:px-14 lg:py-20" aria-labelledby="pricing-title">
       <span className="pointer-events-none absolute left-1/2 top-10 -z-10 -translate-x-1/2 font-serif text-[18rem] leading-none text-blue-100/20 lg:text-[30rem]" aria-hidden="true">III</span>
 
       <div className="mx-auto max-w-6xl">
@@ -58,14 +58,14 @@ function Pricing() {
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#58759c] sm:text-lg">Choisissez la formule adaptée à vos besoins et à votre niveau de croissance.</p>
         </header>
 
-        <div className="mt-14 grid items-stretch gap-6 md:grid-cols-3 lg:mt-20 lg:gap-7">
+        <div className="mt-12 grid items-stretch gap-6 lg:mt-20 lg:grid-cols-3 lg:gap-7">
           {offers.map((offer) => (
             <article
               key={offer.name}
               data-pricing-card
-              className={`relative flex min-h-[530px] min-w-0 flex-col overflow-hidden rounded-[1.6rem] border bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,.98),rgba(244,249,255,.9)_60%,rgba(230,242,253,.82))] px-6 py-7 backdrop-blur-xl sm:rounded-[2rem] sm:px-7 sm:py-8 lg:px-8 lg:py-9 ${
+              className={`relative flex min-w-0 flex-col overflow-hidden rounded-[1.6rem] border bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,.98),rgba(244,249,255,.9)_60%,rgba(230,242,253,.82))] px-6 py-7 backdrop-blur-xl sm:rounded-[2rem] sm:px-7 sm:py-8 lg:min-h-[530px] lg:px-8 lg:py-9 ${
                 offer.featured
-                  ? 'border-blue-300/80 shadow-[0_30px_75px_rgba(21,111,207,.19)] ring-1 ring-white md:relative md:-top-5'
+                  ? 'border-blue-300/80 shadow-[0_30px_75px_rgba(21,111,207,.19)] ring-1 ring-white lg:relative lg:-top-5'
                   : 'border-white/90 shadow-[0_20px_55px_rgba(27,91,158,.1)]'
               }`}
             >
@@ -92,7 +92,7 @@ function Pricing() {
                 ))}
               </ul>
 
-              <a href="#contact" className={`mt-auto inline-flex min-h-13 w-full items-center justify-center gap-5 rounded-full px-6 py-3.5 text-sm font-bold transition hover:-translate-y-0.5 ${
+              <a href="#contact" className={`mt-8 inline-flex min-h-[50px] w-full items-center justify-center gap-5 rounded-full px-6 py-3.5 text-sm font-bold transition hover:-translate-y-0.5 lg:mt-auto ${
                 offer.featured
                   ? 'bg-gradient-to-r from-[#078cf0] to-[#0872e9] text-white shadow-[0_12px_28px_rgba(8,126,238,.24)]'
                   : 'border border-blue-200 bg-white/55 text-[#0873d7] hover:border-blue-400'

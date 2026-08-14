@@ -16,16 +16,16 @@ const packs = [
 function PackPlaque({ pack, content }) {
   return (
     <article
-      className={`relative flex min-h-[380px] w-[min(88vw,330px)] flex-col overflow-hidden rounded-[1.6rem] border bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,.98),rgba(244,249,255,.91)_58%,rgba(229,241,253,.88))] px-7 py-8 text-center shadow-[0_22px_55px_rgba(35,102,171,.14)] backdrop-blur-xl sm:min-h-[350px] sm:w-[240px] sm:px-5 sm:py-7 lg:min-h-[405px] lg:w-[330px] lg:px-8 lg:py-9 ${
+      className={`relative flex min-h-[330px] w-full flex-col overflow-hidden rounded-[1.6rem] border bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,.98),rgba(244,249,255,.91)_58%,rgba(229,241,253,.88))] px-6 py-7 text-start shadow-[0_18px_45px_rgba(35,102,171,.11)] backdrop-blur-xl sm:px-7 lg:min-h-[405px] lg:w-[330px] lg:px-8 lg:py-9 lg:text-center lg:shadow-[0_22px_55px_rgba(35,102,171,.14)] ${
         pack.featured ? 'border-[#8dc9f4]/80 ring-1 ring-white' : 'border-white/90'
       }`}
     >
       <span className="absolute start-6 top-6 font-serif text-3xl font-semibold text-blue-200 lg:text-4xl">{pack.number}</span>
       <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#4f8fd2]">{content.label}</p>
-      <span className="mx-auto mt-4 h-px w-7 bg-blue-200" aria-hidden="true" />
+      <span className="mt-4 h-px w-9 bg-blue-300 lg:mx-auto lg:w-7" aria-hidden="true" />
       <h2 className="mt-6 text-2xl font-extrabold tracking-[-0.04em] text-[#0a3d78] lg:text-[1.7rem]">{pack.name}</h2>
-      <p className="mx-auto mt-6 line-clamp-2 min-h-11 max-w-[245px] text-sm leading-relaxed text-[#647fa8] sm:text-xs lg:text-sm">{content.description}</p>
-      <div className="mx-auto mt-6 flex w-[72%] items-center" aria-hidden="true">
+      <p className="mt-5 max-w-[290px] text-[15px] leading-relaxed text-[#647fa8] lg:mx-auto lg:mt-6 lg:line-clamp-2 lg:min-h-11 lg:max-w-[245px] lg:text-sm">{content.description}</p>
+      <div className="mt-6 flex w-full items-center lg:mx-auto lg:w-[72%]" aria-hidden="true">
         <span className="h-px flex-1 bg-blue-200/80" />
         <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
         <span className="h-px flex-1 bg-blue-200/80" />
@@ -79,12 +79,12 @@ function Pillars() {
     <section
       id="packs"
       ref={sectionRef}
-      className="relative isolate min-h-screen scroll-mt-20 overflow-hidden bg-transparent px-5 py-12 text-enos-950 sm:px-8 lg:px-14 lg:py-16"
+      className="relative isolate scroll-mt-20 overflow-hidden bg-transparent px-5 py-20 text-enos-950 sm:px-8 sm:py-24 lg:min-h-screen lg:px-14 lg:py-16"
       aria-label={t('sections.pillars')}
     >
       <img src={enosWordmark} alt="" aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-4 -z-10 mx-auto w-[min(82vw,1000px)] opacity-[0.025]" />
       <div className="mx-auto max-w-[1200px]">
-        <header className="mb-10 text-center sm:mb-12">
+        <header className="mb-10 text-start sm:mb-12 lg:text-center">
           <p className="mx-auto inline-flex rounded-full bg-blue-100/65 px-5 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#187bd5]">NOS PACKS</p>
           <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-extrabold leading-[1.05] tracking-[-0.05em] text-[#073b78] min-[375px]:text-4xl sm:text-5xl lg:text-6xl">
             Les piliers de votre<br /><span className="text-[#087ef1]">croissance digitale</span>
@@ -92,16 +92,16 @@ function Pillars() {
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-[#47648b] sm:text-base">Trois solutions conçues pour accompagner votre entreprise à chaque étape de sa croissance.</p>
         </header>
 
-        <div className="grid w-full gap-16 md:grid-cols-3 md:gap-2 lg:gap-8">
+        <div className="grid w-full gap-5 lg:grid-cols-3 lg:gap-8">
           {packs.map((pack, index) => (
-            <div key={pack.name} data-pack-item className="relative h-[720px] min-w-0 sm:h-[760px] lg:h-[860px]">
+            <div key={pack.name} data-pack-item className="relative min-w-0 lg:h-[860px]">
               <img
                 src={packPillar}
                 alt=""
                 aria-hidden="true"
-                className="absolute start-1/2 top-0 z-10 h-[680px] w-auto max-w-none -translate-x-1/2 object-contain drop-shadow-[0_20px_25px_rgba(76,139,201,.08)] sm:h-[720px] lg:h-[820px]"
+                className="absolute start-1/2 top-0 z-10 hidden h-[820px] w-auto max-w-none -translate-x-1/2 object-contain drop-shadow-[0_20px_25px_rgba(76,139,201,.08)] lg:block"
               />
-              <div data-pack-card className="absolute inset-x-0 top-[190px] z-20 flex justify-center sm:top-[210px] lg:top-[245px]">
+              <div data-pack-card className="relative z-20 flex justify-center lg:absolute lg:inset-x-0 lg:top-[245px]">
                 <PackPlaque pack={pack} content={Array.isArray(packContent) ? packContent[index] : {}} />
               </div>
             </div>
