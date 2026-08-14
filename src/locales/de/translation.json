@@ -1,0 +1,24 @@
+{
+  "navigation": { "ariaLabel": "Hauptnavigation", "home": "Start", "services": "Leistungen", "about": "Über uns", "work": "Projekte", "pricing": "Preise", "contact": "Kontakt", "quote": "Angebot erhalten" },
+  "language": { "label": "Sprache" },
+  "footer": { "rights": "Alle Rechte vorbehalten." },
+  "hero": {
+    "eyebrow": "Marketingagentur",
+    "title": { "line1": "Wir bringen", "line2": "Ihr Business", "line3": "online voran" },
+    "description": "Maßgeschneiderte digitale Strategien für mehr Sichtbarkeit, Kunden und Umsatz.",
+    "primaryCta": "Unsere Leistungen",
+    "secondaryCta": "Unsere Projekte",
+    "stats": [ { "value": "+250", "label": "Erfolgreiche Projekte" }, { "value": "+95%", "label": "Zufriedene Kunden" }, { "value": "+5", "label": "Jahre Erfahrung" }, { "value": "100%", "label": "Engagement" } ]
+  },
+  "sections": {
+    "pillars": "Unsere 3 Säulen", "services": "Leistungen", "about": "Über uns", "projects": "Projekte", "pricing": "Preise", "contact": "Kontakt",
+    "packs": {
+      "eyebrow": "Drei Fundamente, ein Ziel", "title": "Unsere Pakete", "intro": "Drei Pakete für jede Phase Ihres digitalen Wachstums.",
+      "items": [
+        { "label": "Säule 01", "description": "Die Basis für eine klare und professionelle digitale Präsenz.", "from": "Ab", "price": "990 €", "cta": "Entdecken" },
+        { "label": "Säule 02", "description": "Eine vollständige Strategie für mehr Reichweite und Kunden.", "from": "Ab", "price": "1.490 €", "cta": "Entdecken" },
+        { "label": "Säule 03", "description": "Premium-Begleitung für eine starke und nachhaltige Marke.", "from": "Ab", "price": "2.490 €", "cta": "Entdecken" }
+      ]
+    }
+  }
+}

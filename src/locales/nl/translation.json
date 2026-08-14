@@ -1,0 +1,24 @@
+{
+  "navigation": { "ariaLabel": "Hoofdnavigatie", "home": "Home", "services": "Diensten", "about": "Over ons", "work": "Projecten", "pricing": "Tarieven", "contact": "Contact", "quote": "Offerte aanvragen" },
+  "language": { "label": "Taal" },
+  "footer": { "rights": "Alle rechten voorbehouden." },
+  "hero": {
+    "eyebrow": "Marketingbureau",
+    "title": { "line1": "Laat je bedrijf", "line2": "online", "line3": "groeien" },
+    "description": "Digitale strategieën op maat om je zichtbaarheid, klantenbestand en verkoop te vergroten.",
+    "primaryCta": "Ontdek onze diensten",
+    "secondaryCta": "Bekijk onze projecten",
+    "stats": [ { "value": "+250", "label": "Succesvolle projecten" }, { "value": "+95%", "label": "Tevreden klanten" }, { "value": "+5", "label": "Jaar ervaring" }, { "value": "100%", "label": "Betrokkenheid" } ]
+  },
+  "sections": {
+    "pillars": "Onze 3 pijlers", "services": "Diensten", "about": "Over ons", "projects": "Projecten", "pricing": "Tarieven", "contact": "Contact",
+    "packs": {
+      "eyebrow": "Drie fundamenten, één ambitie", "title": "Onze pakketten", "intro": "Drie pakketten voor elke fase van je digitale groei.",
+      "items": [
+        { "label": "Pijler 01", "description": "De basis voor een heldere en professionele digitale aanwezigheid.", "from": "Vanaf", "price": "€ 990", "cta": "Ontdek" },
+        { "label": "Pijler 02", "description": "Een complete strategie voor meer bereik en klanten.", "from": "Vanaf", "price": "€ 1.490", "cta": "Ontdek" },
+        { "label": "Pijler 03", "description": "Premium begeleiding voor een sterk en duurzaam merk.", "from": "Vanaf", "price": "€ 2.490", "cta": "Ontdek" }
+      ]
+    }
+  }
+}

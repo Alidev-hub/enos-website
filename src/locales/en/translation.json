@@ -1,0 +1,29 @@
+{
+  "navigation": { "ariaLabel": "Main navigation", "home": "Home", "services": "Services", "about": "About", "work": "Projects", "pricing": "Pricing", "contact": "Contact", "quote": "Get a quote" },
+  "language": { "label": "Language" },
+  "footer": { "rights": "All rights reserved." },
+  "hero": {
+    "eyebrow": "Marketing agency",
+    "title": { "line1": "Let's grow", "line2": "your business", "line3": "online" },
+    "description": "Tailored digital strategies to boost your visibility, attract more customers and increase your sales.",
+    "primaryCta": "Discover our services",
+    "secondaryCta": "View our projects",
+    "stats": [
+      { "value": "+250", "label": "Successful projects" },
+      { "value": "+95%", "label": "Satisfied clients" },
+      { "value": "+5", "label": "Years of experience" },
+      { "value": "100%", "label": "Commitment" }
+    ]
+  },
+  "sections": {
+    "pillars": "Our 3 pillars", "services": "Services", "about": "About", "projects": "Projects", "pricing": "Pricing", "contact": "Contact",
+    "packs": {
+      "eyebrow": "Three foundations, one ambition", "title": "Our packs", "intro": "Three packs designed to support every stage of your digital growth.",
+      "items": [
+        { "label": "Pillar 01", "description": "The essentials for a clear and professional digital presence.", "from": "Starting at", "price": "€990", "cta": "Discover" },
+        { "label": "Pillar 02", "description": "A complete strategy to accelerate acquisition and visibility.", "from": "Starting at", "price": "€1,490", "cta": "Discover" },
+        { "label": "Pillar 03", "description": "Premium support to build a strong and lasting brand.", "from": "Starting at", "price": "€2,490", "cta": "Discover" }
+      ]
+    }
+  }
+}

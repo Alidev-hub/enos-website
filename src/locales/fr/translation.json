@@ -1,0 +1,31 @@
+{
+  "navigation": { "ariaLabel": "Navigation principale", "home": "Accueil", "services": "Services", "about": "À propos", "work": "Réalisations", "pricing": "Tarifs", "contact": "Contact", "quote": "Obtenir un devis" },
+  "language": { "label": "Langue" },
+  "footer": { "rights": "Tous droits réservés." },
+  "hero": {
+    "eyebrow": "Marketing agency",
+    "title": { "line1": "Faisons grandir", "line2": "votre business", "line3": "en ligne" },
+    "description": "Stratégies digitales sur mesure pour booster votre visibilité, attirer plus de clients et augmenter vos ventes.",
+    "primaryCta": "Découvrir nos services",
+    "secondaryCta": "Voir nos réalisations",
+    "stats": [
+      { "value": "+250", "label": "Projets réussis" },
+      { "value": "+95%", "label": "Clients satisfaits" },
+      { "value": "+5", "label": "Années d’expérience" },
+      { "value": "100%", "label": "Engagement" }
+    ]
+  },
+  "sections": {
+    "pillars": "Nos 3 piliers", "services": "Services", "about": "À propos", "projects": "Réalisations", "pricing": "Tarifs", "contact": "Contact",
+    "packs": {
+      "eyebrow": "Trois fondations, une ambition",
+      "title": "Nos packs",
+      "intro": "Trois packs conçus pour soutenir chaque étape de votre croissance digitale.",
+      "items": [
+        { "label": "Pilier 01", "description": "L’essentiel pour poser une présence digitale claire et professionnelle.", "from": "À partir de", "price": "990 €", "cta": "Découvrir" },
+        { "label": "Pilier 02", "description": "Une stratégie complète pour accélérer votre acquisition et votre visibilité.", "from": "À partir de", "price": "1 490 €", "cta": "Découvrir" },
+        { "label": "Pilier 03", "description": "Un accompagnement premium pour bâtir une marque forte et durable.", "from": "À partir de", "price": "2 490 €", "cta": "Découvrir" }
+      ]
+    }
+  }
+}

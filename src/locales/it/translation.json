@@ -1,0 +1,24 @@
+{
+  "navigation": { "ariaLabel": "Navigazione principale", "home": "Home", "services": "Servizi", "about": "Chi siamo", "work": "Progetti", "pricing": "Tariffe", "contact": "Contatti", "quote": "Richiedi preventivo" },
+  "language": { "label": "Lingua" },
+  "footer": { "rights": "Tutti i diritti riservati." },
+  "hero": {
+    "eyebrow": "Agenzia marketing",
+    "title": { "line1": "Facciamo crescere", "line2": "il tuo business", "line3": "online" },
+    "description": "Strategie digitali su misura per aumentare visibilità, clienti e vendite.",
+    "primaryCta": "Scopri i servizi",
+    "secondaryCta": "Guarda i progetti",
+    "stats": [ { "value": "+250", "label": "Progetti riusciti" }, { "value": "+95%", "label": "Clienti soddisfatti" }, { "value": "+5", "label": "Anni di esperienza" }, { "value": "100%", "label": "Impegno" } ]
+  },
+  "sections": {
+    "pillars": "I nostri 3 pilastri", "services": "Servizi", "about": "Chi siamo", "projects": "Progetti", "pricing": "Tariffe", "contact": "Contatti",
+    "packs": {
+      "eyebrow": "Tre fondamenta, un’ambizione", "title": "I nostri pacchetti", "intro": "Tre pacchetti per ogni fase della tua crescita digitale.",
+      "items": [
+        { "label": "Pilastro 01", "description": "L’essenziale per una presenza digitale chiara e professionale.", "from": "A partire da", "price": "990 €", "cta": "Scopri" },
+        { "label": "Pilastro 02", "description": "Una strategia completa per aumentare acquisizione e visibilità.", "from": "A partire da", "price": "1.490 €", "cta": "Scopri" },
+        { "label": "Pilastro 03", "description": "Supporto premium per costruire un brand forte e duraturo.", "from": "A partire da", "price": "2.490 €", "cta": "Scopri" }
+      ]
+    }
+  }
+}

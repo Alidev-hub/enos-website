@@ -1,0 +1,24 @@
+{
+  "navigation": { "ariaLabel": "Navegación principal", "home": "Inicio", "services": "Servicios", "about": "Nosotros", "work": "Proyectos", "pricing": "Tarifas", "contact": "Contacto", "quote": "Pedir presupuesto" },
+  "language": { "label": "Idioma" },
+  "footer": { "rights": "Todos los derechos reservados." },
+  "hero": {
+    "eyebrow": "Agencia de marketing",
+    "title": { "line1": "Hagamos crecer", "line2": "tu negocio", "line3": "en línea" },
+    "description": "Estrategias digitales a medida para aumentar tu visibilidad, clientes y ventas.",
+    "primaryCta": "Descubre los servicios",
+    "secondaryCta": "Ver nuestros proyectos",
+    "stats": [ { "value": "+250", "label": "Proyectos exitosos" }, { "value": "+95%", "label": "Clientes satisfechos" }, { "value": "+5", "label": "Años de experiencia" }, { "value": "100%", "label": "Compromiso" } ]
+  },
+  "sections": {
+    "pillars": "Nuestros 3 pilares", "services": "Servicios", "about": "Nosotros", "projects": "Proyectos", "pricing": "Tarifas", "contact": "Contacto",
+    "packs": {
+      "eyebrow": "Tres bases, una ambición", "title": "Nuestros packs", "intro": "Tres packs para cada etapa de tu crecimiento digital.",
+      "items": [
+        { "label": "Pilar 01", "description": "Lo esencial para una presencia digital clara y profesional.", "from": "Desde", "price": "990 €", "cta": "Descubrir" },
+        { "label": "Pilar 02", "description": "Una estrategia completa para aumentar captación y visibilidad.", "from": "Desde", "price": "1.490 €", "cta": "Descubrir" },
+        { "label": "Pilar 03", "description": "Acompañamiento premium para una marca fuerte y duradera.", "from": "Desde", "price": "2.490 €", "cta": "Descubrir" }
+      ]
+    }
+  }
+}
