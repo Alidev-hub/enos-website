@@ -38,7 +38,7 @@ function Field({ label, children, className = '' }) {
   )
 }
 
-const inputClass = 'w-full rounded-xl border border-blue-100/90 bg-white/70 px-4 py-3.5 text-sm text-[#073b78] outline-none transition placeholder:text-slate-400 focus:border-blue-400 focus:bg-white focus:ring-4 focus:ring-blue-100/60'
+const inputClass = 'min-h-12 w-full rounded-xl border border-blue-100/90 bg-white/70 px-4 py-3.5 text-base text-[#073b78] outline-none transition placeholder:text-slate-400 focus:border-blue-400 focus:bg-white focus:ring-4 focus:ring-blue-100/60 sm:text-sm'
 
 function Contact() {
   const sectionRef = useRef(null)
@@ -64,7 +64,7 @@ function Contact() {
   }, [])
 
   return (
-    <section id="contact" ref={sectionRef} className="relative isolate scroll-mt-20 overflow-hidden bg-transparent px-5 py-14 sm:px-8 lg:px-14 lg:py-20" aria-labelledby="contact-title">
+    <section id="contact" ref={sectionRef} className="relative isolate scroll-mt-20 overflow-hidden bg-transparent px-5 py-20 sm:px-8 sm:py-24 lg:px-14 lg:py-20" aria-labelledby="contact-title">
       <img src={enosWordmark} alt="" aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-8 -z-10 mx-auto w-[min(88vw,1100px)] opacity-[0.025]" />
 
       <div className="mx-auto max-w-6xl">
@@ -75,7 +75,7 @@ function Contact() {
         </header>
 
         <div ref={columnsRef} className="mt-14 grid items-stretch gap-6 lg:mt-20 lg:grid-cols-[.82fr_1.18fr] lg:gap-8">
-          <aside className="relative isolate min-h-[530px] overflow-hidden rounded-[1.6rem] border border-white/90 bg-white/55 p-5 shadow-[0_25px_65px_rgba(27,91,158,.11)] backdrop-blur-xl min-[375px]:p-7 sm:min-h-[600px] sm:rounded-[2rem] sm:p-9">
+          <aside className="relative isolate overflow-hidden rounded-[1.6rem] border border-white/90 bg-white/55 p-5 shadow-[0_25px_65px_rgba(27,91,158,.11)] backdrop-blur-xl min-[375px]:p-7 sm:rounded-[2rem] sm:p-9 lg:min-h-[600px]">
             <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_70%_75%,rgba(157,211,251,.42),transparent_38%),linear-gradient(145deg,rgba(255,255,255,.9),rgba(232,244,255,.55))]" />
             <img src={greekStatue} alt="" aria-hidden="true" className="pointer-events-none absolute -bottom-[18%] -end-[32%] -z-10 h-[76%] max-w-none opacity-30 grayscale" />
 

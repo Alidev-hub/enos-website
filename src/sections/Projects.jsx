@@ -36,18 +36,18 @@ function Projects() {
   }, [])
 
   return (
-    <section id="realisations" ref={sectionRef} className="relative isolate scroll-mt-20 overflow-hidden bg-transparent px-5 py-14 sm:px-8 lg:px-14 lg:py-20" aria-labelledby="projects-title">
+    <section id="realisations" ref={sectionRef} className="relative isolate scroll-mt-20 overflow-hidden bg-transparent px-5 py-20 sm:px-8 sm:py-24 lg:px-14 lg:py-20" aria-labelledby="projects-title">
       <span className="pointer-events-none absolute -start-10 top-16 -z-10 font-serif text-[18rem] leading-none text-blue-100/25 lg:text-[28rem]" aria-hidden="true">Ω</span>
       <span className="pointer-events-none absolute -end-8 bottom-8 -z-10 font-serif text-[15rem] leading-none text-blue-100/20 lg:text-[24rem]" aria-hidden="true">Σ</span>
 
       <div className="mx-auto max-w-7xl">
-        <header ref={headingRef} className="mx-auto max-w-3xl text-center">
+        <header ref={headingRef} className="max-w-3xl text-start lg:mx-auto lg:text-center">
           <p className="mx-auto inline-flex rounded-full bg-blue-100/70 px-5 py-2 text-[10px] font-bold uppercase tracking-[0.22em] text-[#167bd7]">RÉALISATIONS</p>
           <h2 id="projects-title" className="mt-5 text-3xl font-extrabold leading-[1.06] tracking-[-0.05em] text-[#073b78] min-[375px]:text-4xl sm:text-5xl lg:text-6xl">Des projets qui parlent <span className="text-[#087ef1]">d’eux-mêmes</span></h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#58759c] sm:text-lg">Découvrez quelques réalisations conçues pour développer la visibilité et la croissance de nos clients.</p>
         </header>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-20 lg:grid-cols-3 lg:gap-7">
+        <div className="mt-10 grid gap-7 md:grid-cols-2 lg:mt-20 lg:grid-cols-3 lg:gap-7">
           {projects.map((project) => (
             <article
               key={project.name}
@@ -59,7 +59,7 @@ function Projects() {
               }`}
             >
               {project.featured && <span className="absolute inset-x-10 top-0 z-20 h-1 rounded-full bg-gradient-to-r from-transparent via-blue-500 to-transparent" />}
-              <div className="relative aspect-[16/10] overflow-hidden rounded-[1.25rem] bg-blue-50">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem] bg-blue-50 lg:aspect-[16/10]">
                 <div
                   className="absolute inset-0 bg-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                   style={{ backgroundImage: `url(${portfolioGrid})`, backgroundSize: '300% 200%', backgroundPosition: project.position }}

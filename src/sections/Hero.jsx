@@ -77,29 +77,30 @@ function Hero() {
   return (
     <section id="accueil" ref={sectionRef} className="relative isolate min-h-[100svh] scroll-mt-20 overflow-hidden bg-transparent text-[#06356f] [contain:paint] lg:h-[max(100svh,760px)]" aria-labelledby="hero-title">
 
-      <div ref={mobileRef} className="relative z-20 px-4 pb-10 pt-[82px] sm:px-7 lg:hidden">
-        <div className="relative z-30 rounded-[1.6rem] border border-white/80 bg-white/70 p-5 shadow-[0_18px_48px_rgba(5,58,118,.08)] backdrop-blur-md">
-          <p className="text-[9px] font-bold uppercase tracking-[0.17em] text-[#008cf0]">{t('hero.eyebrow')}</p>
-          <h1 className="mt-3 text-[clamp(2rem,10vw,2.75rem)] font-extrabold leading-[.96] tracking-[-0.05em] text-[#083a78]">
+      <div ref={mobileRef} className="relative z-20 px-5 pb-16 pt-[104px] sm:px-8 sm:pt-[116px] lg:hidden">
+        <div className="relative z-30">
+          <p className="flex items-center gap-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#008cf0]"><span className="h-px w-8 bg-[#0797ef]" />{t('hero.eyebrow')}</p>
+          <h1 id="hero-title" className="mt-5 max-w-[9.5em] text-[clamp(2.5rem,11vw,3.4rem)] font-extrabold leading-[.94] tracking-[-0.055em] text-[#083a78]">
             <span className="block">{t('hero.title.line1')}</span><span className="block">{t('hero.title.line2')}</span><span className="block text-[#0495ef]">{t('hero.title.line3')}</span>
           </h1>
-          <p className="mt-3 text-[12px] font-medium leading-[1.5] text-[#123f75]">{t('hero.description')}</p>
-          <div className="mt-4 grid grid-cols-2 gap-2">
-            <a href="#services" className="flex min-h-10 items-center justify-center rounded-full bg-[#0797ef] px-2 text-center text-[10px] font-bold text-white">{t('hero.primaryCta')}</a>
-            <a href="#realisations" className="flex min-h-10 items-center justify-center rounded-full border border-[#0b4d98] bg-white/60 px-2 text-center text-[10px] font-bold text-[#073c7b]">{t('hero.secondaryCta')}</a>
+          <p className="mt-5 max-w-[34rem] text-[15px] font-medium leading-[1.65] text-[#31577e] sm:text-base">{t('hero.description')}</p>
+          <div className="mt-7 grid gap-3 sm:grid-cols-2">
+            <a href="#services" className="flex min-h-[50px] items-center justify-center rounded-full bg-[#0797ef] px-5 text-center text-sm font-bold text-white shadow-[0_14px_30px_rgba(7,151,239,.2)]">{t('hero.primaryCta')}</a>
+            <a href="#realisations" className="flex min-h-[50px] items-center justify-center rounded-full border border-[#9cc7e8] bg-white/45 px-5 text-center text-sm font-bold text-[#073c7b]">{t('hero.secondaryCta')}</a>
           </div>
         </div>
 
-        <div className="relative -mt-2 h-[310px] overflow-hidden sm:h-[380px]">
-          <img src={enosWordmark} alt="" aria-hidden="true" className="absolute left-1/2 top-12 w-[145%] max-w-none -translate-x-1/2 opacity-25" />
-          <img ref={mobileStatueRef} src={philosopherStatue} alt="" aria-hidden="true" className="absolute bottom-[-72px] left-1/2 h-[440px] max-w-none -translate-x-1/2 object-contain drop-shadow-[0_22px_24px_rgba(16,38,66,.2)] sm:bottom-[-90px] sm:h-[530px]" />
+        <div className="relative -mx-5 mt-3 h-[clamp(330px,92vw,440px)] overflow-hidden sm:-mx-8">
+          <div className="absolute inset-x-0 bottom-0 h-2/3 bg-[radial-gradient(ellipse_at_center,rgba(113,194,248,.22),transparent_67%)]" />
+          <img src={enosWordmark} alt="" aria-hidden="true" className="absolute left-1/2 top-[20%] w-[125%] max-w-none -translate-x-1/2 opacity-[.22]" />
+          <img ref={mobileStatueRef} src={philosopherStatue} alt="" aria-hidden="true" className="absolute bottom-[-18%] left-1/2 h-[125%] max-w-none -translate-x-1/2 object-contain drop-shadow-[0_24px_26px_rgba(16,38,66,.22)]" />
         </div>
 
-        <div className="grid grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-2 border-y border-blue-100/90">
           {Array.isArray(stats) && stats.map((stat, index) => (
-            <div key={stat.label} className="flex min-w-0 items-center gap-2.5 rounded-xl border border-white/85 bg-white/70 p-3 shadow-[0_10px_28px_rgba(5,58,118,.06)] backdrop-blur">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#e1f1ff] text-[#008ef1] [&_svg]:h-5 [&_svg]:w-5 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.8]">{icons[['target', 'chart', 'users', 'rocket'][index]]}</span>
-              <span className="min-w-0"><strong className="block text-base font-extrabold leading-none text-[#073b78]">{stat.value}</strong><span className="mt-1 block text-[9px] leading-tight text-[#174578]">{stat.label}</span></span>
+            <div key={stat.label} className={`flex min-w-0 items-center gap-3 px-2 py-5 ${index % 2 === 0 ? 'border-e border-blue-100/90' : ''} ${index < 2 ? 'border-b border-blue-100/90' : ''}`}>
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center text-[#008ef1] [&_svg]:h-6 [&_svg]:w-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.7]">{icons[['target', 'chart', 'users', 'rocket'][index]]}</span>
+              <span className="min-w-0"><strong className="block text-xl font-extrabold leading-none text-[#073b78]">{stat.value}</strong><span className="mt-1.5 block text-[11px] leading-tight text-[#58759c]">{stat.label}</span></span>
             </div>
           ))}
         </div>

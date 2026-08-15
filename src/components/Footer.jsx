@@ -40,13 +40,13 @@ function Footer() {
   }, [])
 
   return (
-    <footer id="footer" ref={footerRef} className="relative isolate overflow-hidden border-t border-white/70 bg-[linear-gradient(145deg,rgba(233,245,253,.98),rgba(214,234,249,.96))] px-5 pb-7 pt-10 text-[#073b78] sm:px-8 lg:px-14 lg:pt-12">
+    <footer id="footer" ref={footerRef} className="relative isolate overflow-hidden border-t border-white/70 bg-[linear-gradient(145deg,rgba(233,245,253,.98),rgba(214,234,249,.96))] px-5 pb-7 pt-12 text-[#073b78] sm:px-8 lg:px-14 lg:pt-12">
       <img src={enosWordmark} alt="" aria-hidden="true" className="pointer-events-none absolute -bottom-20 left-1/2 -z-10 w-[min(90vw,1050px)] -translate-x-1/2 opacity-[0.035]" />
       <div className="absolute inset-0 -z-20 opacity-25 [background-image:repeating-linear-gradient(120deg,transparent_0,transparent_42px,rgba(56,137,205,.07)_43px,transparent_45px)]" />
 
       <div className="mx-auto max-w-7xl">
-        <div ref={gridRef} className="grid gap-9 sm:grid-cols-2 sm:gap-12 lg:grid-cols-[1.35fr_.8fr_1fr_1fr] lg:gap-10">
-          <div>
+        <div ref={gridRef} className="grid grid-cols-2 gap-x-5 gap-y-10 sm:gap-12 lg:grid-cols-[1.35fr_.8fr_1fr_1fr] lg:gap-10">
+          <div className="col-span-2 lg:col-span-1">
             <a href="#accueil" aria-label="Retour à l’accueil" className="inline-flex">
               <img src={enosWordmark} alt="ENOS" className="w-40" />
             </a>
@@ -83,7 +83,7 @@ function Footer() {
           </div>
         </div>
 
-        <div ref={bottomRef} className="mt-14 flex flex-col gap-4 border-t border-blue-200/65 pt-6 text-xs text-[#6883a3] sm:flex-row sm:items-center sm:justify-between lg:mt-20">
+        <div ref={bottomRef} className="mt-10 flex flex-col gap-4 border-t border-blue-200/65 pt-6 text-xs text-[#6883a3] sm:flex-row sm:items-center sm:justify-between lg:mt-20">
           <p>© 2026 ENOS. Tous droits réservés.</p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             <a href="#footer" className="transition hover:text-[#087ef1]">Politique de confidentialité</a>

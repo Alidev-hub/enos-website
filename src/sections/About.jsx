@@ -51,10 +51,10 @@ function About() {
   }, [])
 
   return (
-    <section id="a-propos" ref={sectionRef} className="relative scroll-mt-20 bg-transparent px-5 py-14 sm:px-8 lg:px-14 lg:py-20" aria-labelledby="about-title">
+    <section id="a-propos" ref={sectionRef} className="relative scroll-mt-20 bg-transparent px-5 py-20 sm:px-8 sm:py-24 lg:px-14 lg:py-20" aria-labelledby="about-title">
       <div
         ref={cardRef}
-        className="relative isolate mx-auto max-w-6xl overflow-hidden rounded-[2rem] border border-white/90 bg-white/45 px-5 pb-7 pt-9 shadow-[0_35px_90px_rgba(26,91,159,.1)] backdrop-blur-md sm:rounded-[2.5rem] sm:px-10 sm:pb-10 sm:pt-12 lg:px-14 lg:pb-12 lg:pt-16"
+        className="relative isolate mx-auto max-w-6xl overflow-hidden px-0 lg:rounded-[2.5rem] lg:border lg:border-white/90 lg:bg-white/45 lg:px-14 lg:pb-12 lg:pt-16 lg:shadow-[0_35px_90px_rgba(26,91,159,.1)] lg:backdrop-blur-md"
       >
         <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_82%_32%,rgba(179,220,252,.42),transparent_35%),linear-gradient(135deg,rgba(255,255,255,.82),rgba(238,247,255,.55))]" />
         <div className="absolute inset-0 -z-10 opacity-25 [background-image:repeating-linear-gradient(115deg,transparent_0,transparent_34px,rgba(66,141,209,.08)_35px,transparent_37px)]" />
@@ -67,7 +67,7 @@ function About() {
             <p className="mt-7 max-w-xl text-base leading-[1.8] text-[#58759c] sm:text-lg">ENOS accompagne les entreprises dans leur présence digitale grâce à une approche stratégique, créative et orientée résultats.</p>
           </div>
 
-          <div className="relative z-10 mx-auto h-[280px] w-full max-w-[360px] sm:h-[430px] sm:max-w-[400px] lg:h-[500px]">
+          <div className="relative z-10 mx-auto -mt-5 h-[330px] w-full max-w-[390px] sm:h-[430px] sm:max-w-[400px] lg:mt-0 lg:h-[500px]">
             <div className="absolute bottom-3 left-1/2 h-20 w-3/4 -translate-x-1/2 rounded-[50%] bg-blue-500/10 blur-2xl" />
             <img ref={statueRef} src={greekStatue} alt="" aria-hidden="true" className="absolute inset-x-0 bottom-[-18%] mx-auto h-[130%] w-auto max-w-none object-contain drop-shadow-[0_30px_35px_rgba(20,75,135,.16)]" />
           </div>
