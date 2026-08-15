@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 import { languages } from '../data/languages'
 import enosWordmark from '../assets/enos-wordmark.png'
@@ -34,7 +35,8 @@ function Navbar() {
   }, [open])
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 h-[68px] bg-white/35 text-[#06356f] backdrop-blur-[8px] lg:h-[78px] lg:bg-transparent lg:backdrop-blur-none">
+    <>
+    <header className="absolute inset-x-0 top-0 z-[60] h-[68px] bg-white/35 text-[#06356f] backdrop-blur-[8px] lg:h-[78px] lg:bg-transparent lg:backdrop-blur-none">
       <nav className="mx-auto flex h-full max-w-[1340px] items-center justify-between gap-3 px-5 sm:px-7 lg:gap-8 lg:px-10" aria-label={t('navigation.ariaLabel')}>
         <a href="#accueil" aria-label="ENOS" className="shrink-0"><Logo /></a>
 
@@ -59,7 +61,10 @@ function Navbar() {
         </div>
       </nav>
 
-      <div className={`fixed inset-0 top-[68px] z-50 bg-[#f6fbff]/98 px-5 pb-7 pt-7 backdrop-blur-2xl transition duration-300 lg:hidden ${open ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-3 opacity-0'}`} aria-hidden={!open}>
+    </header>
+
+    {createPortal(
+      <div className={`fixed inset-x-0 bottom-0 top-[68px] z-50 h-[calc(100dvh-68px)] bg-[#f6fbff]/98 px-5 pb-7 pt-7 backdrop-blur-2xl transition duration-300 lg:hidden ${open ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-3 opacity-0'}`} aria-hidden={!open}>
         <div id="mobile-navigation" ref={menuRef} className="mx-auto flex h-full max-w-lg flex-col overflow-y-auto">
           <p className="text-[11px] font-extrabold uppercase tracking-[.22em] text-[#0797ef]">Navigation</p>
           <div className="mt-6 flex flex-col border-t border-blue-100/80">{links.map((link, index) => <a tabIndex={open ? 0 : -1} key={link.key} href={link.href} onClick={() => setOpen(false)} className="group flex min-h-[57px] items-center justify-between border-b border-blue-100/80 text-[clamp(1.45rem,7vw,2rem)] font-extrabold tracking-[-.04em] text-[#073b78] outline-none transition hover:text-[#0797ef] focus-visible:text-[#0797ef]"><span>{t(`navigation.${link.key}`)}</span><span className="text-sm font-medium text-blue-300">0{index + 1}</span></a>)}</div>
@@ -67,8 +72,10 @@ function Navbar() {
             <a tabIndex={open ? 0 : -1} href="#contact" onClick={() => setOpen(false)} className="flex min-h-[52px] w-full items-center justify-center rounded-full bg-[#0797ef] px-6 text-[15px] font-bold text-white shadow-[0_14px_30px_rgba(7,151,239,.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#073b78]">{t('navigation.quote')}</a>
           </div>
         </div>
-      </div>
-    </header>
+      </div>,
+      document.body,
+    )}
+    </>
   )
 }
 
